@@ -1,13 +1,15 @@
 
 package filepersistence;
 
+import streamMachine.PersistenceException;
+
 import java.io.IOException;
 
 /**
  * We assume: Each sensor gets its own storage engine. There wont be a parameter
  * sensor name.
  */
-public interface SensorDataStorage {
+public interface StreamMachine {
 
     /**
      * This method can be called by a sensor to save a data set.

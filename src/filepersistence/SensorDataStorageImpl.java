@@ -1,11 +1,10 @@
 package filepersistence;
 
-import java.io.DataOutputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
+import streamMachine.PersistenceException;
 
-public class SensorDataStorageImpl implements SensorDataStorage {
+import java.io.IOException;
+
+public class SensorDataStorageImpl implements StreamMachine {
 
     @Override
     public void saveData(long time, float values) throws PersistenceException, IOException {
